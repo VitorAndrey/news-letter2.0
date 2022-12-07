@@ -1,7 +1,193 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Header */
+
+/* Nav bar */
+.navbar {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222;
+  width: 100%;
+  min-height: 70px;
+  padding: 10px 40px;
+}
+.nav-logo {
+  font-size: 30px;
+  color: white;
+}
+.nav-logo span {
+  color: #2b8864;
+}
+.nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+.nav-link {
+  color: white;
+  font-size: 20px;
+  transition: 0.7s ease;
+}
+.nav-link:hover {
+  color: #2b8864;
+}
+.hamburguer {
+  display: none;
+  cursor: pointer;
+}
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+/* Content */
+.content {
+  width: 650px;
+  padding: 80px 10px;
+  margin: 0 auto;
+}
+.capa {
+  width: 100%;
+}
+.img {
+  width: 100%;
+}
+.button {
+  padding: 10px;
+  background: #2b8864;
+  text-decoration: none;
+  color: white;
+  border-radius: 8px;
+  border: 1px solid #2b8864;
+  transition: all 0.3s ease;
+}
+.button:hover {
+  background: none;
+  color: black;
+}
+h2 {
+  color: #2b8864;
+  text-decoration: underline #2b8864;
+  font-size: 46.5px;
+  text-align: center;
+}
+h3 {
+  font-size: 30px;
+}
+article {
+  margin-bottom: 200px;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0px;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 3px solid #2b8864;
+  padding-bottom: 30px;
+}
+p {
+  margin: 20px auto;
+}
+img {
+  width: 80%;
+}
+
+/* Responsividade */
+.opac {
+  top: 70px;
+  left: 0;
+  width: 20%;
+  height: 100vh;
+  position: fixed;
+  background-color: #222;
+  display: none;
+  opacity: 0.5;
+}
+@media (max-width: 865px) {
+  .hamburguer {
+    display: block;
+  }
+  .hamburguer.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburguer.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburguer.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .nav-menu {
+    padding-top: 40px;
+    justify-content: flex-start;
+    position: fixed;
+    right: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #222;
+    width: 80%;
+    height: 100vh;
+    text-align: center;
+  }
+  .nav-item {
+    margin-bottom: 16px;
+  }
+  .nav-menu.active {
+    right: 0;
+  }
+  .opac.active {
+    display: block;
+  }
+}
+@media (max-width: 715px) {
+  .content {
+    width: 91%;
+  }
+  section {
+    border-width: 80%;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  .nav-logo {
+    font-size: 25px;
+  }
+}
+@media (max-width: 455px) {
+  .content {
+    width: 90%;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  .nav-logo {
+    font-size: 20px;
+  }
 }
