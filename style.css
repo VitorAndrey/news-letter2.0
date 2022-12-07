@@ -164,9 +164,6 @@ img {
   .content {
     width: 95%;
   }
-  section {
-    border-width: 80%;
-  }
   h2 {
     font-size: 2.5rem;
   }
@@ -179,7 +176,7 @@ img {
 }
 @media (max-width: 455px) {
   .content {
-    width: 90%;
+    width: 95%;
   }
   h2 {
     font-size: 2rem;
