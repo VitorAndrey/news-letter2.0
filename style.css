@@ -150,6 +150,11 @@ img {
     height: 100vh;
     text-align: center;
   }
+  .nav-menu li {
+    border-bottom: 1px solid #2b8864;
+    width: 75%;
+    padding-bottom: 20px;
+  }
   .nav-item {
     margin-bottom: 16px;
   }
