@@ -92,6 +92,7 @@ button:hover {
 }
 .introducao {
   text-align: center;
+  margin-bottom: 100px;
 }
 /*  Feedback */
 .feedback {
