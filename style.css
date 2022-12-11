@@ -93,6 +93,8 @@ button:hover {
 /*  Feedback */
 .feedback {
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Tags */
