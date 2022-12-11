@@ -90,6 +90,9 @@ button:hover {
   background: none;
   color: black;
 }
+.introducao {
+  text-align: center;
+}
 /*  Feedback */
 .feedback {
   text-align: center;
