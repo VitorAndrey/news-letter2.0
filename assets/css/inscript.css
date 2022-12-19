@@ -50,3 +50,9 @@ button {
 button:hover {
   border-radius: 15px;
 }
+
+@media (max-width: 480px) {
+  section {
+    width: 93%;
+  }
+}
