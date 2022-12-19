@@ -21,3 +21,11 @@ document.querySelectorAll(".nav-link", ".opac").forEach((n) =>
     opac.classList.remove("active");
   })
 );
+
+function functionInscript() {
+  alert("Obrigado por se inscrever!");
+}
+
+function functionFeedback() {
+  alert("Obrigado pelo Feedback!");
+}
